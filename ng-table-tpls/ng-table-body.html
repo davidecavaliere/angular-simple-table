@@ -1,0 +1,32 @@
+<div>
+        <div>
+                <table class="table table-striped table-hover">
+                        <thead>
+                                <tr>
+                                        <th ng-repeat="h in headers">{{h}}</th>
+                                </tr>
+                        </thead>
+                        <tbody>
+                                <tr ng-class="{active: item===selected}" ng-repeat="item in items" ng-click="selectRow();">
+                                        <td ng-repeat="h in headers">{{item[h]}}</td>
+                                </tr>
+                        </tbody>
+                </table>
+        </div>
+        <div class="row">
+                <div class="col-md-2 text-center">
+                        <select class="form-control" ng-model="paginator.itemsPerPage">
+                                <option ng-repeat="s in pageSizes">{{s}}</option>
+                        </select>
+                </div>
+                <div class="col-md-8 text-center">
+                        <ul class="pagination">
+                          <li class="disabled" ><a href="">&laquo;</a></li>
+                          <li ng-class="i===page ? 'active': ''" ng-repeat="i in pageNumbers" ng-click="changePage();"><a href="">{{i}} <span ng-show="i===page ? true : false" class="sr-only">(current)</span></a></li>
+                          <li class="disabled" ><a href="">&raquo;</a></li>
+                        </ul>
+                </div>
+                <div class="col-md-2 text-center">{{selected._id}}</div>
+        </div>
+</div>
+~                  

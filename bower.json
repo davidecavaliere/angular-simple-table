@@ -1,0 +1,30 @@
+{
+  "name": "angular-simple-table",
+  "main": "angular-simple-table.js",
+  "version": "0.0.1",
+  "authors": [
+    "davide cavaliere <cavaliere.davide@gmail.com>"
+  ],
+  "description": "Simple table directive for angularjs - uses bootstrap",
+  "keywords": [
+    "angularjs",
+    "bootstrap",
+    "table"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/davidecavaliere/angular-simple-table",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "demo",
+    "ng-table-tpls"
+  ],
+  "dependencies": {
+    "angularjs": "*",
+    "angular-route": "~1.2.16",
+    "fontawesome": "~4.0.3"
+  }
+}
